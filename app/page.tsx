@@ -3,6 +3,7 @@ import InquiryForm from "@/components/InquiryForm";
 import NewsletterForm from "@/components/NewsletterForm";
 import PortfolioTabs from "@/components/PortfolioTabs";
 import JsonLd from "@/components/JsonLd";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
 
@@ -10,31 +11,7 @@ export default function Home() {
     <main className="bg-uchiha-black text-uchiha-white min-h-screen font-sans">
       <JsonLd />
       {/* ==================== NAVIGACIJA ==================== */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-uchiha-black/90 backdrop-blur-md border-b border-uchiha-gold/20">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <Image 
-              src="/images/logo.png" 
-              alt="Uchiha Tattoo Logo" 
-              width={40} 
-              height={40} 
-              className="h-10 w-auto"
-              style={{ width: 'auto', height: '40px' }} // Ovo rešava Next.js strict upozorenje
-            />
-            <span className="text-xl font-bold tracking-wider text-uchiha-gold">UCHIHA TATTOO</span>
-          </div>
-          <ul className="hidden md:flex gap-8 text-sm uppercase tracking-wide">
-            <li><a href="#onama" className="hover:text-uchiha-gold transition-colors">O Meni</a></li>
-            <li><a href="#portfolio" className="hover:text-uchiha-gold transition-colors">Portfolio</a></li>
-            <li><a href="#flash" className="hover:text-uchiha-gold transition-colors">Flash</a></li>
-            <li><a href="#booking" className="hover:text-uchiha-gold transition-colors">Cene & Booking</a></li>
-            <li><a href="#aftercare" className="hover:text-uchiha-gold transition-colors">Nega</a></li>
-          </ul>
-          <a href="#booking" className="bg-uchiha-gold text-uchiha-black px-5 py-2 rounded font-bold text-sm hover:bg-white transition-colors">
-            Zakaži termin
-          </a>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* ==================== HERO SEKCIJA ==================== */}
       <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
