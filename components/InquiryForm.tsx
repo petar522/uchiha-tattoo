@@ -139,7 +139,7 @@ export default function InquiryForm() {
 
       <Turnstile
         ref={turnstileRef}
-        siteKey={process.env.TURNSTILE_SITE_KEY!}
+        siteKey="0x4AAAAAAE9PsMKiA4ILfBka"
         onSuccess={setToken}
         onExpire={() => setToken("")}
         options={{ theme: "dark" }}
