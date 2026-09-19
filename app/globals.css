@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --color-uchiha-black: #0a0a0a;
+  --color-uchiha-white: #f5f5f5;
+  --color-uchiha-gold: #D4AF37;
+  --color-uchiha-gray: #1a1a1a;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
