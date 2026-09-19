@@ -1,16 +1,14 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
 import InquiryForm from "@/components/InquiryForm";
 import NewsletterForm from "@/components/NewsletterForm";
+import PortfolioTabs from "@/components/PortfolioTabs";
+import JsonLd from "@/components/JsonLd";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("fine-line");
 
   return (
     <main className="bg-uchiha-black text-uchiha-white min-h-screen font-sans">
-      
+      <JsonLd />
       {/* ==================== NAVIGACIJA ==================== */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-uchiha-black/90 backdrop-blur-md border-b border-uchiha-gold/20">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -84,44 +82,11 @@ export default function Home() {
 
       {/* ==================== PORTFOLIO ==================== */}
       <section id="portfolio" className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-uchiha-gold">Portfolio</h2>
-          
-          {/* Filter Dugmići */}
-          <div className="flex justify-center gap-4 mb-12">
-            {["fine-line", "blackwork", "geometrija"].map((tab) => (
-              <button 
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`px-6 py-2 rounded uppercase tracking-wider transition-colors ${
-                  activeTab === tab ? "bg-uchiha-gold text-uchiha-black" : "bg-uchiha-gray text-uchiha-white hover:bg-gray-700"
-                }`}
-              >
-                {tab.replace("-", " ")}
-              </button>
-            ))}
-          </div>
-
-          {/* Galerija mreža (Placeholder) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-              <div key={i} className="aspect-square bg-uchiha-gray rounded-lg overflow-hidden relative group cursor-pointer">
-                <Image 
-                    src={`/images/portfolio/${activeTab}-${i}.jpg`} 
-                    alt={`Tetovaža ${i}`} 
-                    fill 
-                    sizes="(max-width: 768px) 100vw, 25vw"
-                    style={{ objectFit: 'cover' }} 
-                    className="group-hover:scale-110 transition-transform duration-300" 
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center text-gray-600 border border-dashed border-gray-700">
-                  Slika {i}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-4xl font-bold mb-12 text-center text-uchiha-gold">Portfolio</h2>
+    <PortfolioTabs />
+  </div>
+</section>
 
       {/* ==================== FLASH ==================== */}
       <section id="flash" className="py-24 px-6 bg-uchiha-gray">
