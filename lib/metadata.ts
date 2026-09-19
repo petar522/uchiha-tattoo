@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SITE, SITE_URL } from "@/lib/site";
 
-const title = "Uchiha Tattoo Studio Beograd | Fine Line, Blackwork, Geometrija";
+const title = "Uchiha Tattoo Studio Beograd | Fine Line & Blackwork";
 
 export const siteMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),

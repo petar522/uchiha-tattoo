@@ -7,8 +7,7 @@ export const SITE_URL = "https://www.uchiha.ink";
 export const SITE = {
   name: "Uchiha Tattoo Studio",
   artist: "Nikola Subić",
-  description:
-    "Tattoo studio u Beogradu: fine line, blackwork i geometrijske tetovaže, flash motivi i cover-up. Tattoo artist Nikola Subić. Zakaži termin online.",
+  description: "Tattoo studio u Beogradu: fine line, blackwork i geometrija, flash motivi i cover-up. Zakaži termin online.",
   instagram: "https://instagram.com/inkuchiha_",
   logo: `${SITE_URL}/images/logo.png`,
   address: {
