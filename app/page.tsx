@@ -73,7 +73,7 @@ export default function Home() {
                 <strong className="text-uchiha-white">Lokacija:</strong> Pera Slijepčevića 22A, Beograd
               </p>
               <p className="text-gray-400 mt-2">
-                <strong className="text-uchiha-white">Radno vreme:</strong> Po dogovoru (By appointment only)
+                <strong className="text-uchiha-white">Radno vreme:</strong> Po dogovoru
               </p>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function Home() {
             <ul className="space-y-6 text-gray-300">
               <li className="border-l-2 border-uchiha-gold pl-4">
                 <h4 className="font-bold text-uchiha-white text-lg">Cenovnik</h4>
-                <p>Minimum je 20€. Cena zavisi od kompleksnosti i veličine (ne radimo po satu).</p>
+                <p>Od 20€. Cena zavisi od kompleksnosti i veličine.</p>
               </li>
               <li className="border-l-2 border-uchiha-gold pl-4">
                 <h4 className="font-bold text-uchiha-white text-lg">Depozit</h4>
