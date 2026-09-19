@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import InquiryForm from "@/components/InquiryForm";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("fine-line");
@@ -167,28 +169,7 @@ export default function Home() {
           {/* DESNA STRANA: FORMA */}
           <div className="bg-uchiha-gray p-8 rounded-lg border border-uchiha-gold/30">
             <h3 className="text-2xl font-bold mb-6 text-center">Formiraj Upit</h3>
-            <form className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <input type="text" placeholder="Ime i Prezime" className="w-full bg-uchiha-black border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-uchiha-gold" required />
-                <input type="email" placeholder="Email" className="w-full bg-uchiha-black border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-uchiha-gold" required />
-              </div>
-              <input type="tel" placeholder="Telefon" className="w-full bg-uchiha-black border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-uchiha-gold" required />
-              <div className="grid grid-cols-2 gap-4">
-                <input type="text" placeholder="Deo tela" className="w-full bg-uchiha-black border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-uchiha-gold" required />
-                <input type="text" placeholder="Dimenzije (cm)" className="w-full bg-uchiha-black border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-uchiha-gold" required />
-              </div>
-              <textarea placeholder="Opis ideje..." rows={4} className="w-full bg-uchiha-black border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-uchiha-gold" required></textarea>
-              <div>
-                <label className="block text-sm text-gray-400 mb-2">Reference (slike)</label>
-                <input type="file" multiple className="w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-uchiha-black file:bg-uchiha-gold hover:file:bg-white cursor-pointer" />
-              </div>
-              <button type="submit" className="w-full bg-uchiha-gold text-uchiha-black font-bold py-3 rounded hover:bg-white transition-colors">
-                Pošalji upit
-              </button>
-              <p className="text-xs text-center text-gray-500 mt-2">
-                *Nakon slanja upita, sledi dogovor o preciznoj ceni i uplata depozita.
-              </p>
-            </form>
+            <InquiryForm />
           </div>
         </div>
       </section>
@@ -259,10 +240,7 @@ export default function Home() {
           <div>
             <h4 className="text-lg font-bold mb-4">Newsletter</h4>
             <p className="text-gray-500 mb-2 text-sm">Prijavi se za flash days i popuste.</p>
-            <form className="flex gap-2 justify-center md:justify-start">
-              <input type="email" placeholder="Tvoj email" className="bg-uchiha-gray border border-gray-700 rounded px-3 py-2 text-sm focus:outline-none focus:border-uchiha-gold" />
-              <button type="submit" className="bg-uchiha-gold text-uchiha-black px-4 py-2 rounded text-sm font-bold">Pošalji</button>
-            </form>
+            <NewsletterForm />
           </div>
         </div>
         <div className="text-center text-gray-700 mt-12 text-sm" suppressHydrationWarning>
