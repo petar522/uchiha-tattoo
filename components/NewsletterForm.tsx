@@ -64,7 +64,7 @@ export default function NewsletterForm() {
         <input name="website" type="text" tabIndex={-1} autoComplete="off" />
       </div>
 
-      <label className="flex items-start gap-2 text-xs text-gray-500 text-left">
+      <label className="flex items-start gap-2 text-xs text-gray-400 text-left">
         <input name="consent" type="checkbox" required className="mt-0.5 accent-[#d4af37]" />
         <span>Pristajem da primam obaveštenja o flash danima i terminima.</span>
       </label>

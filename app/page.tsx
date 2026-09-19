@@ -139,7 +139,7 @@ export default function Home() {
               <span className="text-3xl font-bold text-uchiha-gold">03</span>
               <div>
                 <h4 className="text-xl font-bold mb-2">Sušenje i Krema</h4>
-                <p className="text-gray-400">Ubrusom natapkati (ne brisati!) da se skine višak vode. Namazati Pentenol kremom (krema je bolja opcija od masti jer koža brže upija).</p>
+                <p className="text-gray-400">Ubrusom natapkati (ne brisati!) da se skine višak vode. Namazati Pantenol kremom (krema je bolja opcija od masti jer koža brže upija).</p>
               </div>
             </div>
             <div className="flex gap-6">
@@ -166,15 +166,24 @@ export default function Home() {
           <div>
             <h3 className="text-2xl font-bold text-uchiha-gold mb-2">UCHIHA TATTOO</h3>
             <p className="text-gray-500">Pera Slijepčevića 22A, Beograd</p>
-            <p className="text-gray-500">By appointment only</p>
           </div>
           
           {/* Instagram Feed / Link */}
           <div className="flex flex-col items-center gap-4">
             <h4 className="text-lg font-bold">Prati rad na Instagramu</h4>
-            <a href="https://instagram.com/inkuchiha_" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-2 rounded font-bold hover:opacity-80 transition-opacity">
-              @inkuchiha_
-            </a>
+            <a 
+                href="https://instagram.com/inkuchiha_"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border-2 border-uchiha-gold text-uchiha-gold px-6 py-2 rounded font-bold hover:bg-uchiha-gold hover:text-uchiha-black transition-colors"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                </svg>
+                @inkuchiha_
+              </a>
             {/* Ovde kasnije možeš ubaciti Elfsight kod za live feed */}
           </div>
 
@@ -185,7 +194,7 @@ export default function Home() {
             <NewsletterForm />
           </div>
         </div>
-        <div className="text-center text-gray-700 mt-12 text-sm" suppressHydrationWarning>
+        <div className="text-center text-gray-400 mt-12 text-sm" suppressHydrationWarning>
           © {new Date().getFullYear()} Uchiha Tattoo Studio. Sva prava zadržana.
         </div>
       </footer>

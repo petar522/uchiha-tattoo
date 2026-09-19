@@ -159,7 +159,7 @@ export default function InquiryForm() {
         </p>
       )}
 
-      <p className="text-xs text-center text-gray-500 mt-2">
+      <p className="text-xs text-center text-gray-400 mt-2">
         *Nakon slanja upita, sledi dogovor o preciznoj ceni i uplata depozita.
       </p>
     </form>
