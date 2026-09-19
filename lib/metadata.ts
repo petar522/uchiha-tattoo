@@ -12,18 +12,19 @@ export const siteMetadata: Metadata = {
   description: SITE.description,
   alternates: { canonical: "/" },
   openGraph: {
-    type: "website",
-    locale: "sr_RS",
-    url: "/",
-    siteName: SITE.name,
-    title,
-    description: SITE.description,
-    // OG slika se uzima automatski iz app/opengraph-image.jpg (1200x630)
-  },
-  twitter: {
-    card: "summary_large_image",
-    title,
-    description: SITE.description,
-  },
+  type: "website",
+  locale: "sr_RS",
+  url: "/",
+  siteName: SITE.name,
+  title,
+  description: SITE.description,
+  images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Uchiha Tattoo Studio Beograd" }],
+},
+twitter: {
+  card: "summary_large_image",
+  title,
+  description: SITE.description,
+  images: ["/og.jpg"],
+},
   robots: { index: true, follow: true },
 };
